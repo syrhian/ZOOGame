@@ -13,5 +13,7 @@ Class::
 
     graines : 1
     viande : 2
+    animaux : 3
+    habitat : 4
 
     maturité sexuelle en mois

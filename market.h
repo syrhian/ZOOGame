@@ -5,13 +5,19 @@
 using namespace std;
 class Market;
         class Market {
+        protected:
+            int _budget;
         public:
+            int setBudget(int budget)
+            Market(string name);
             virtual ~Market();
             string getName();
-            virtual string getType() = 0;
-            virtual int getPrice() = 0;
+            virtual string getAlimType() = 0;
+            virtual float getPrice() = 0;
             virtual bool isSealable() = 0;
             virtual double getQuantity() = 0;
+            virtual int sellPrice() = 0;
+            virtual int getAge() = 0;
     };
 
 

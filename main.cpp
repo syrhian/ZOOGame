@@ -5,6 +5,7 @@
 #include <iostream>
 #include "ianimal.h"
 #include "zoo.h"
+#include "market.h"
 using namespace std;
 //ANIMAUX
 class Coq:public IAnimal {
@@ -211,7 +212,253 @@ public:
     }
 };
 //MARKET
-class graines:public Mar
+class graine:public Market {
+    string getAlimType() override{
+        return 1;
+    }
+    float getPrice() override{
+        return 2.5;
+    }
+    bool isSealable() override{
+        return false;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return NULL;
+    }
+    int getAge() override{
+        return NULL;
+    }
+};
+class viande:public Market {
+    string getAlimType() override{
+        return 2;
+    }
+    float getPrice() override{
+        return 5;
+    }
+    bool isSealable() override{
+        return false;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return NULL;
+    }
+    int getAge() override{
+        return NULL;
+    }
+};
+class poule6m:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 20;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 10;
+    }
+    int getAge() override{
+        return 6;
+    }
+};
+class coq6m:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 100;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 20;
+    }
+    int getAge() override{
+        return 6;
+    }
+};
+class tigre6m:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 3000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 1500;
+    }
+    int getAge() override{
+        return 6;
+    }
+};
+class tigre4a:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 120000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 60000;
+    }
+    int getAge() override{
+        return 48;
+    }
+};
+class tigre14a:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 60000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 10000;
+    }
+    int getAge() override{
+        return 168;
+    }
+};
+class aigle6m:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 1000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 500;
+    }
+    int getAge() override{
+        return 6;
+    }
+};
+class aigle4a:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 4000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 2000;
+    }
+    int getAge() override{
+        return 48;
+    }
+};
+class aigle14a:public Market {
+    string getAlimType() override{
+        return 3;
+    }
+    float getPrice() override{
+        return 2000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 400;
+    }
+    int getAge() override{
+        return 168;
+    }
+};
+class habitT:public Market {
+    string getAlimType() override{
+        return 4;
+    }
+    float getPrice() override{
+        return 2000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 500;
+    }
+    int getAge() override{
+        return NULL;
+    }
+};
+class habitA:public Market {
+    string getAlimType() override{
+        return 4;
+    }
+    float getPrice() override{
+        return 2000;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 500;
+    }
+    int getAge() override{
+        return NULL;
+    }
+};
+class habitP:public Market {
+    string getAlimType() override{
+        return 4;
+    }
+    float getPrice() override{
+        return 300;
+    }
+    bool isSealable() override{
+        return true;
+    }double getQuantity() override{
+        //valeur utilisateur
+    }
+    int sellPrice() override{
+        return 50;
+    }
+    int getAge() override{
+        return NULL;
+    }
+};
 /*
 class Poule:public IAnimal {
 public:
