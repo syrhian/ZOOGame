@@ -1,0 +1,17 @@
+Class::
+    iAnimal : nom,age,genre,type_alim,qtt_alim,faim,malade,strt_sxl,end_sxl,infant_mort,life_esp,fidelité,-1mois
+    zoo : habitats,saison_haute
+    marché  : type_prdt,qtt_prdt,prix_achat,vendable,prix_vente
+    habitat : type_animal,capacité,qtt_animaux,surpop,maladie
+    maladie : type_animal,proba_maladie,durée,mortalité
+    visiteurs : type_animal,qtt_visiteur,saison_haute
+    subvention : type_animal,qtt_animaux,valeur_sub
+    grosesse : type_animal,tmp_gestation,faim,surpopulation,maladie
+    naissance : type_animal,mort_infantile
+    event : type,proba,effet
+
+
+    graines : 1
+    viande : 2
+
+    maturité sexuelle en mois
