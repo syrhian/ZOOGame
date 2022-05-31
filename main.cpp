@@ -213,7 +213,7 @@ public:
 };
 //MARKET
 class graine:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 1;
     }
     float getPrice() override{
@@ -232,7 +232,7 @@ class graine:public Market {
     }
 };
 class viande:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 2;
     }
     float getPrice() override{
@@ -251,7 +251,7 @@ class viande:public Market {
     }
 };
 class poule6m:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -270,7 +270,7 @@ class poule6m:public Market {
     }
 };
 class coq6m:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -289,7 +289,7 @@ class coq6m:public Market {
     }
 };
 class tigre6m:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -308,7 +308,7 @@ class tigre6m:public Market {
     }
 };
 class tigre4a:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -327,7 +327,7 @@ class tigre4a:public Market {
     }
 };
 class tigre14a:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -346,7 +346,7 @@ class tigre14a:public Market {
     }
 };
 class aigle6m:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -365,7 +365,7 @@ class aigle6m:public Market {
     }
 };
 class aigle4a:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -384,7 +384,7 @@ class aigle4a:public Market {
     }
 };
 class aigle14a:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 3;
     }
     float getPrice() override{
@@ -403,7 +403,7 @@ class aigle14a:public Market {
     }
 };
 class habitT:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 4;
     }
     float getPrice() override{
@@ -422,7 +422,7 @@ class habitT:public Market {
     }
 };
 class habitA:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 4;
     }
     float getPrice() override{
@@ -441,7 +441,7 @@ class habitA:public Market {
     }
 };
 class habitP:public Market {
-    string getAlimType() override{
+    int getType() override{
         return 4;
     }
     float getPrice() override{
