@@ -15,7 +15,7 @@ protected:
     string _name;
 public:
     IAnimal(string name);
-    virtual ~IAnimal();
+    ~IAnimal();
     string getName();
     bool isAlive();
     virtual int getAge() = 0;
@@ -30,5 +30,6 @@ public:
     virtual int getLifeEsp() = 0;
     virtual bool getFidelity() = 0;
     bool isMoreOneMonth() ;
+    bool isHungry();
 };
 #endif // IANIMAL_H

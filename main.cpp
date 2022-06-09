@@ -459,6 +459,13 @@ class habitP:public Market {
         return NULL;
     }
 };
+
+//EVENT
+class event {
+public:
+    virtual void action() = 0;
+};
+
 /*
 class Poule:public IAnimal {
 public:

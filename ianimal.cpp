@@ -1,4 +1,5 @@
 #include "ianimal.h"
+#include "main.cpp"
 #include <string>
 #include <iostream>
 
@@ -13,6 +14,11 @@ IAnimal::IAnimal(string name):_name(name)
 IAnimal::~IAnimal()
 {
     //dtor
+}
+
+bool isHungry()
+{
+    return Coq::getHunger();
 }
 
 string IAnimal::getName()

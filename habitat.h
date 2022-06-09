@@ -10,7 +10,7 @@ class Market;
 class Habitat {
 public:
     Habitat();
-    virtual ~Habitat();
+    ~Habitat();
     virtual int capacity(Market *market) = 0;
 };
 

@@ -9,7 +9,7 @@ class IAnimal;
 class Zoo {
 public:
     Zoo();
-    ~Zoo();
+    virtual ~Zoo();
 };
 
 #endif // ZOO_H
