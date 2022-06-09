@@ -22,3 +22,7 @@ string Market::getName()
 int Market::setBudget(int budget) {
     return _budget;
 }
+
+void Market::Achat(int choice) {
+
+}
