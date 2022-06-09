@@ -17,3 +17,11 @@ Class::
     habitat : 4
 
     maturité sexuelle en mois
+
+
+    1)poule
+    2)coq
+    3)tigre male
+    4)tigre femelle
+    5)aigle male
+    6)aigle femelle

@@ -6,466 +6,452 @@
 #include "ianimal.h"
 #include "zoo.h"
 #include "market.h"
+#include "main.h"
 using namespace std;
 //ANIMAUX
-class Coq:public IAnimal {
-public:
-    int getAge() override {
+//Coq
+Coq::Coq(){}
+    int Coq::getAge()  {
         //boutique
     }
-    string getGender() override {
+    string Coq::getGender()  {
         return "Male";
     }
-    int getAlimType() override {
+    int Coq::getAlimType()  {
         return 1;
     }
-    double getAlimQtt() override {
+    double Coq::getAlimQtt()  {
         return 0.18;
     }
-    bool getHunger() override {
+    bool Coq::getHunger()  {
         return 2;
     }
-    int getStartSex() override {
+    int Coq::getStartSex()  {
         return 6;
     }
-    int getEndSex() override {
+    int Coq::getEndSex()  {
         return 96;
     }
-    int getInfantMortal() override {
+    int Coq::getInfantMortal()  {
         return NULL;
     }
-    int getLifeEsp() override {
+    int Coq::getLifeEsp()  {
         return 15;
     }
-    bool getFidelity() override {
+    bool Coq::getFidelity()  {
         return false;
     }
-};
 
-class Poule:public IAnimal {
-public:
-    int getAge() override {
+//Poule
+    int Poule::getAge()  {
         //boutique
     }
-    string getGender() override {
+    string Poule::getGender()  {
         return "Female";
     }
-    int getAlimType() override {
+    int Poule::getAlimType()  {
         return 1;
     }
-    double getAlimQtt() override {
+    double Poule::getAlimQtt()  {
         return 0.15;
     }
-    bool getHunger() override {
+    bool Poule::getHunger()  {
         return 1;
     }
-    int getStartSex() override {
+    int Poule::getStartSex()  {
         return 6;
     }
-    int getEndSex() override {
+    int Poule::getEndSex()  {
         return 96;
     }
-    int getInfantMortal() override {
+    int Poule::getInfantMortal()  {
         return 50;
     }
-    int getLifeEsp() override {
+    int Poule::getLifeEsp()  {
         return 15;
     }
-    bool getFidelity() override {
+    bool Poule::getFidelity()  {
         return false;
     }
-};
 
-class AigleMale:public IAnimal {
-public:
-    int getAge() override {
+
+    int AigleMale::getAge()  {
         //boutique
     }
-    string getGender() override {
+    string AigleMale::getGender()  {
         return "Male";
     }
-    int getAlimType() override {
+    int AigleMale::getAlimType()  {
         return 2;
     }
-    double getAlimQtt() override {
+    double AigleMale::getAlimQtt()  {
         return 0.25;
     }
-    bool getHunger() override {
+    bool AigleMale::getHunger()  {
         return 10;
     }
-    int getStartSex() override {
+    int AigleMale::getStartSex()  {
         return 48;
     }
-    int getEndSex() override {
+    int AigleMale::getEndSex()  {
         return 168;
     }
-    int getInfantMortal() override {
+    int AigleMale::getInfantMortal()  {
         return NULL;
     }
-    int getLifeEsp() override {
+    int AigleMale::getLifeEsp()  {
         return 25;
     }
-    bool getFidelity() override {
+    bool AigleMale::getFidelity()  {
         return true;
     }
-};
 
-class AigleFemelle:public IAnimal {
-public:
-    int getAge() override {
+
+
+    int AigleFemelle::getAge()  {
         //boutique
     }
-    string getGender() override {
+    string AigleFemelle::getGender()  {
         return "Female";
     }
-    int getAlimType() override {
+    int AigleFemelle::getAlimType()  {
         return 2;
     }
-    double getAlimQtt() override {
+    double AigleFemelle::getAlimQtt()  {
         return 0.3;
     }
-    bool getHunger() override {
+    bool AigleFemelle::getHunger()  {
         return 10;
     }
-    int getStartSex() override {
+    int AigleFemelle::getStartSex()  {
         return 48;
     }
-    int getEndSex() override {
+    int AigleFemelle::getEndSex()  {
         return 168;
     }
-    int getInfantMortal() override {
+    int AigleFemelle::getInfantMortal()  {
         return 50;
     }
-    int getLifeEsp() override {
+    int AigleFemelle::getLifeEsp()  {
         return 25;
     }
-    bool getFidelity() override {
+    bool AigleFemelle::getFidelity()  {
         return true;
     }
-};
 
-class TigreMale:public IAnimal {
-public:
-    int getAge() override {
+
+    int TigreMale::getAge()  {
         //boutique
     }
-    string getGender() override {
+    string TigreMale::getGender()  {
         return "Male";
     }
-    int getAlimType() override {
+    int TigreMale::getAlimType()  {
         return 2;
     }
-    double getAlimQtt() override {
+    double TigreMale::getAlimQtt()  {
         return 12;
     }
-    bool getHunger() override {
+    bool TigreMale::getHunger()  {
         return 2;
     }
-    int getStartSex() override {
+    int TigreMale::getStartSex()  {
         return 72;
     }
-    int getEndSex() override {
+    int TigreMale::getEndSex()  {
         return 168;
     }
-    int getInfantMortal() override {
+    int TigreMale::getInfantMortal()  {
         return NULL;
     }
-    int getLifeEsp() override {
+    int TigreMale::getLifeEsp()  {
         return 25;
     }
-    bool getFidelity() override {
+    bool TigreMale::getFidelity()  {
         return false;
     }
-};
 
-class TigreFemelle:public IAnimal {
-public:
-    int getAge() override {
+    int TigreFemelle::getAge()  {
         //boutique
     }
-    string getGender() override {
+    string TigreFemelle::getGender()  {
         return "Female";
     }
-    int getAlimType() override {
+    int TigreFemelle::getAlimType()  {
         return 2;
     }
-    double getAlimQtt() override {
+    double TigreFemelle::getAlimQtt()  {
         return 10;
     }
-    bool getHunger() override {
+    bool TigreFemelle::getHunger()  {
         return 2;
     }
-    int getStartSex() override {
+    int TigreFemelle::getStartSex()  {
         return 48;
     }
-    int getEndSex() override {
+    int TigreFemelle::getEndSex()  {
         return 168;
     }
-    int getInfantMortal() override {
+    int TigreFemelle::getInfantMortal()  {
         return 33;
     }
-    int getLifeEsp() override {
+    int TigreFemelle::getLifeEsp()  {
         return 25;
     }
-    bool getFidelity() override {
+    bool TigreFemelle::getFidelity()  {
         return false;
     }
-};
+
 //MARKET
-class graine:public Market {
-    int getType() override{
+graine::graine(string name) : Market(name) {}
+    int graine::getType() {
         return 1;
     }
-    float getPrice() override{
+    float graine::getPrice() {
         return 2.5;
     }
-    bool isSealable() override{
+    bool graine::isSealable() {
         return false;
-    }double getQuantity() override{
+    }
+    double graine::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int graine::sellPrice() {
         return NULL;
     }
-    int getAge() override{
+    int graine::getAge() {
         return NULL;
     }
-};
-class viande:public Market {
-    int getType() override{
+
+
+    int viande::getType() {
         return 2;
     }
-    float getPrice() override{
+    float viande::getPrice() {
         return 5;
     }
-    bool isSealable() override{
+    bool viande::isSealable() {
         return false;
-    }double getQuantity() override{
+    }double viande::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int viande::sellPrice() {
         return NULL;
     }
-    int getAge() override{
+    int viande::getAge() {
         return NULL;
     }
-};
-class poule6m:public Market {
-    int getType() override{
+
+    int poule6m::getType() {
         return 3;
     }
-    float getPrice() override{
+    float poule6m::getPrice() {
         return 20;
     }
-    bool isSealable() override{
+    bool poule6m::isSealable() {
         return true;
-    }double getQuantity() override{
+    }
+    double poule6m::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int poule6m::sellPrice() {
         return 10;
     }
-    int getAge() override{
+    int poule6m::getAge() {
         return 6;
     }
-};
-class coq6m:public Market {
-    int getType() override{
+
+
+    int coq6m::getType() {
         return 3;
     }
-    float getPrice() override{
+    float coq6m::getPrice() {
         return 100;
     }
-    bool isSealable() override{
+    bool coq6m::isSealable() {
         return true;
-    }double getQuantity() override{
+    }
+    double coq6m::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int coq6m::sellPrice() {
         return 20;
     }
-    int getAge() override{
+    int coq6m::getAge() {
         return 6;
     }
-};
-class tigre6m:public Market {
-    int getType() override{
+
+
+    int tigre6m::getType() {
         return 3;
     }
-    float getPrice() override{
+    float tigre6m::getPrice() {
         return 3000;
     }
-    bool isSealable() override{
+    bool tigre6m::isSealable() {
         return true;
-    }double getQuantity() override{
+    }
+    double tigre6m::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int tigre6m::sellPrice() {
         return 1500;
     }
-    int getAge() override{
+    int tigre6m::getAge() {
         return 6;
     }
-};
-class tigre4a:public Market {
-    int getType() override{
+
+
+    int tigre4a::getType() {
         return 3;
     }
-    float getPrice() override{
+    float tigre4a::getPrice() {
         return 120000;
     }
-    bool isSealable() override{
+    bool tigre4a::isSealable() {
         return true;
-    }double getQuantity() override{
+    }double tigre4a::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int tigre4a::sellPrice() {
         return 60000;
     }
-    int getAge() override{
+    int tigre4a::getAge() {
         return 48;
     }
-};
-class tigre14a:public Market {
-    int getType() override{
+
+    int tigre14a::getType() {
         return 3;
     }
-    float getPrice() override{
+    float tigre14a::getPrice() {
         return 60000;
     }
-    bool isSealable() override{
+    bool tigre14a::isSealable() {
         return true;
-    }double getQuantity() override{
+    }double tigre14a::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int tigre14a::sellPrice() {
         return 10000;
     }
-    int getAge() override{
+    int tigre14a::getAge() {
         return 168;
     }
-};
-class aigle6m:public Market {
-    int getType() override{
+
+    int aigle6m::getType() {
         return 3;
     }
-    float getPrice() override{
+    float aigle6m::getPrice() {
         return 1000;
     }
-    bool isSealable() override{
+    bool aigle6m::isSealable() {
         return true;
-    }double getQuantity() override{
+    }
+    double aigle6m::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int aigle6m::sellPrice() {
         return 500;
     }
-    int getAge() override{
+    int aigle6m::getAge() {
         return 6;
     }
-};
-class aigle4a:public Market {
-    int getType() override{
+
+    int aigle4a::getType() {
         return 3;
     }
-    float getPrice() override{
+    float aigle4a::getPrice() {
         return 4000;
     }
-    bool isSealable() override{
+    bool aigle4a::isSealable() {
         return true;
-    }double getQuantity() override{
+    }
+    double aigle4a::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int aigle4a::sellPrice() {
         return 2000;
     }
-    int getAge() override{
+    int aigle4a::getAge() {
         return 48;
     }
-};
-class aigle14a:public Market {
-    int getType() override{
+
+    int aigle14a::getType() {
         return 3;
     }
-    float getPrice() override{
+    float aigle14a::getPrice() {
         return 2000;
     }
-    bool isSealable() override{
+    bool aigle14a::isSealable() {
         return true;
-    }double getQuantity() override{
+    }double aigle14a::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int aigle14a::sellPrice() {
         return 400;
     }
-    int getAge() override{
+    int aigle14a::getAge() {
         return 168;
     }
-};
-class habitT:public Market {
-    int getType() override{
+
+//HABITATS
+
+    int habitT::getType() {
         return 4;
     }
-    float getPrice() override{
+    float habitT::getPrice() {
         return 2000;
     }
-    bool isSealable() override{
+    bool habitT::isSealable() {
         return true;
-    }double getQuantity() override{
+    }double habitT::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int habitT::sellPrice() {
         return 500;
     }
-    int getAge() override{
+    int habitT::getAge() {
         return NULL;
     }
-};
-class habitA:public Market {
-    int getType() override{
+
+
+    int habitA::getType() {
         return 4;
     }
-    float getPrice() override{
+    float habitA::getPrice() {
         return 2000;
     }
-    bool isSealable() override{
+    bool habitA::isSealable() {
         return true;
-    }double getQuantity() override{
+    }double habitA::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int habitA::sellPrice() {
         return 500;
     }
-    int getAge() override{
+    int habitA::getAge() {
         return NULL;
     }
-};
-class habitP:public Market {
-    int getType() override{
+
+
+    int habitP::getType() {
         return 4;
     }
-    float getPrice() override{
+    float habitP::getPrice() {
         return 300;
     }
-    bool isSealable() override{
+    bool habitP::isSealable() {
         return true;
-    }double getQuantity() override{
+    }
+    double habitP::getQuantity() {
         //valeur utilisateur
     }
-    int sellPrice() override{
+    int habitP::sellPrice() {
         return 50;
     }
-    int getAge() override{
+    int habitP::getAge() {
         return NULL;
     }
-};
-
-//EVENT
-class event {
-public:
-    virtual void action() = 0;
-};
-
 /*
 class Poule:public IAnimal {
 public:

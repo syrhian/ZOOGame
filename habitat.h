@@ -7,11 +7,13 @@ class IAnimal;
 class Habitat;
 class Market;
 
-class Habitat {
+class Habitat: public IAnimal{
 public:
-    Habitat();
-    ~Habitat();
+    Habitat(string name);
+    virtual ~Habitat();
     virtual int capacity(Market *market) = 0;
+    void addAnimal();
+    void delAnimal();
 };
 
 
