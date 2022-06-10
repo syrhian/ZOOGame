@@ -8,6 +8,15 @@ using namespace std;
 enum AnimalType {
     GRAINE,
     VIANDE,
+    COQ,
+    POULE,
+    AIGLE6M,
+    AIGLE4A,
+    AIGLE14A,
+    TIGRE6M,
+    TIGRE4A,
+    TIGRE14A,
+
 };
 class Market;
         class Market {
@@ -15,11 +24,11 @@ class Market;
             int _budget = 80000;
             string _name;
         public:
-            int setBudget(int budget);
+            int setBudget();
             Market(string name);
             virtual ~Market();
             string getName();
-            void Achat(AnimalType choice);
+            int Achat(AnimalType choice);
             void Vente(AnimalType choice);
             virtual int getType() = 0;
             virtual float getPrice() = 0;

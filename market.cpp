@@ -23,14 +23,30 @@ string Market::getName()
     return _name;
 }
 
-int Market::setBudget(int budget) {
+int Market::setBudget() {
     return _budget;
 }
 
-void Market::Achat(AnimalType choice) {
+int Market::Achat(AnimalType choice) {
     switch (choice) {
-        case AnimalType::GRAINE:
+        case AnimalType::GRAINE: {
+            int prix = (new graine("a"))->getPrice();
+            cout << "le prix est de : " << prix << " $" << endl;
+            cout << "et il vous reste :" << _budget << " $   ||   Confirmer l'achat ?" << endl << "O / N" << endl;
+            char choose;
+            cin >> choose;
+            switch (choose) {
+                case 'O':{
+                    _budget -= prix;
+
+
+                }
+                case 'N':
+                    return 1;
+
+            }
+        }
+        case AnimalType::VIANDE:
             (new graine("a"))->getPrice();
-        case AnimalType::VIANDE
     }
 }

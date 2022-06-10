@@ -10,7 +10,7 @@ Class::
     naissance : type_animal,mort_infantile
     event : type,proba,effet
 
-
+gettype()
     graines : 1
     viande : 2
     animaux : 3
@@ -18,7 +18,7 @@ Class::
 
     maturité sexuelle en mois
 
-
+enum menu
     1)poule
     2)coq
     3)tigre male

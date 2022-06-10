@@ -10,6 +10,8 @@ class Zoo {
 public:
     Zoo();
     virtual ~Zoo();
+    int foodqtty();
+    int habitqtty();
 };
 
 #endif // ZOO_H
